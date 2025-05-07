@@ -1,7 +1,16 @@
 import fastify from 'fastify'
 
+import { knex } from './database'
+import { env } from './env'
+
 const app = fastify()
 
+app.get('/transactions', async () => {
+  const transaction = await knex('transactions').where('amount', '>=', 1000).select('*')
+
+  return transaction
+})
+
 app.listen({
-  port: 3334,
+  port: env.PORT,
 })
