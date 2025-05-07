@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx ./node_modules/.bin/knex",
-    "migrate": "NODE_OPTIONS='--import tsx/esm' ./node_modules/.bin/knex migrate:latest",
+    "migrate": "NODE_OPTIONS='--import tsx/esm' npx knex migrate:latest",
     "lint": "eslint --ext .js,.ts . --fix",
     "test": "vitest",
     "build": "tsup src"
