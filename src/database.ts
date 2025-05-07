@@ -1,6 +1,6 @@
-import { knex as setupKnex, Knex } from 'knex'
+import setupKnex, { Knex } from 'knex'
 
-import { env } from './env'
+import { env } from './env/index.js'
 
 const connection =
   env.DATABASE_CLIENT === 'sqlite'
