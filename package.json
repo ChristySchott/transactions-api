@@ -1,6 +1,7 @@
 {
   "name": "node-fastify-knex",
   "version": "1.0.0",
+  "type": "module",
   "description": "REST API built with Fastify, Knex and Typescript",
   "main": "index.js",
   "engines": {
