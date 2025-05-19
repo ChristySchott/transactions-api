@@ -5,6 +5,7 @@ dist
 # Dependency directories
 node_modules/
 *.local
+package-lock.json
 
 # Logs
 logs
